@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -34,6 +38,10 @@
 
   //font family
   --font-family: "Andika", sans-serif;
+  --font-1: "Protest Guerrilla", sans-serif;
+  --font-2: "Kaushan Script", cursive;
+  --font-3: "New Rocker", cursive;
+  --font-4: "Gowun Batang", sans-serif;
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -63,7 +71,7 @@
 }
 
 body {
-  background-color: var(--backg-3);
+  background-color: var(--black);
 }
 
 ::-webkit-scrollbar {
@@ -73,7 +81,7 @@ body {
 .skeleton {
   position: relative;
   overflow: hidden;
-  background-color: #393e46;
+  background-color: #252a34;
   &::after {
     position: absolute;
     top: 0;
@@ -83,10 +91,10 @@ body {
     transform: translateX(-100%);
     background-image: linear-gradient(
       90deg,
-      rgba(#393e46, 0) 0,
-      rgba(#393e46, 0.2) 20%,
-      rgba(#393e46, 0.5) 60%,
-      rgba(#393e46, 0)
+      rgba(#252a34, 0) 0,
+      rgba(#252a34, 0.2) 20%,
+      rgba(#252a34, 0.5) 60%,
+      rgba(#252a34, 0)
     );
     animation: shimmer 2s infinite;
     content: "";

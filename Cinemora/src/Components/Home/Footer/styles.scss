@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   transition: all ease 0.5s;
+  margin-top: 40px;
 
   .Container {
     display: flex;
@@ -242,8 +243,12 @@
         gap: 15px;
         color: var(--Text);
         opacity: 0.5;
+        cursor: pointer;
 
         @include xs {
+          .icon{
+              font-size: 15px;
+          }
           gap: 5px;
         }
       }

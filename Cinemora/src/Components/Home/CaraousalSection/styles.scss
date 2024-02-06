@@ -1,0 +1,149 @@
+@import "../../../mixins.scss";
+
+//Switch
+
+.switchingTabs {
+  height: 34px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px;
+
+  @include xs {
+      height: 25px;
+  }
+  .tabItems {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    position: relative;
+    @include xs {
+        height: 20px;
+    }
+    .tabItem {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      color: var(--black);
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      transition: color ease 0.3s;
+      &.active {
+        color: white;
+      }
+
+      @include xs {
+        font-size: 10px;
+        width: 60px;
+      }
+    }
+
+    .movingBg {
+      height: 30px;
+      width: 100px;
+      border-radius: 15px;
+      background-color: var(--main-color);
+      position: absolute;
+      left: 0;
+      transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
+
+      @include xs {
+        height: 20px;
+        width: 60px;
+      }
+    }
+  }
+}
+
+//Caraousal Section
+
+.Caraousal {
+  margin-top: 55px;
+
+  .Top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 100;
+      font-family: var(--font-4);
+      color: var(--Text);
+
+      @include xs {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .Bottom {
+    @include xs {
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+    .swiper-slide {
+      margin-right: 50px !important;
+      @include xs {
+        margin-right: 40px !important;
+      }
+    }
+  }
+}
+
+// Single Caraousal Section
+
+.SingleCaraousal {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  .Wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .movie-img {
+      height: 300px;
+      @include xs {
+        height: 100px;
+        width: 75px;
+      }
+      width: 100%;
+      .lazy-load-image-background {
+        height: 100%;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+    }
+    .movie-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h4 {
+        font-size: 1.2rem;
+        color: var(--Text);
+        @include xs {
+          font-size: 0.8rem;
+        }
+      }
+      p {
+        font-size: 0.8rem;
+        color: var(--Text);
+        @include xs {
+          font-size: 0.4rem;
+        }
+      }
+      .rating{
+        color: var(--Text);
+      }
+    }
+  }
+}

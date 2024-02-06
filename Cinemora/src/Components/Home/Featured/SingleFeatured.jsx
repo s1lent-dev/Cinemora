@@ -16,7 +16,7 @@ const SingleFeatured = ({ movie }) => {
       <ContentWrapper>
         <div className="content">
           <div className="Info">
-            <h3>{movie.title}</h3>
+            <h4>{movie.title}</h4>
             <p>{movie.desc}</p>
           </div>
           <div className="Buttons">

@@ -1,0 +1,45 @@
+export const CaraousalData = [
+    {
+        id: 1,
+        title: "Oppenheimer",
+        URL: "/Cinemora/Images/Movies/Oppenheimer.jpg",
+        Ratings: "7.6",
+        Date: "Dec 28, 2021",
+        trending :true,
+    },
+    {
+        id: 2,
+        title: "Avengers Endgame",
+        URL: "/Cinemora/Images/Movies/Endgame.jpg",
+        Ratings: "5.6",
+        Date: "Dec 28, 2021", 
+    },
+    {
+        id: 3,
+        title: "Inception",
+        URL: "/Cinemora/Images/Movies/Inception.jpg",
+        Ratings: "7.6",
+        Date: "Dec 28, 2021", 
+    },
+    {
+        id: 4,
+        title: "Interstellar",
+        URL: "/Cinemora/Images/Movies/Interstellar.jpg",
+        Ratings: "7.6",
+        Date: "Dec 28, 2021", 
+    },
+    {
+        id: 5,
+        title: "Tenet",
+        URL: "/Cinemora/Images/Movies/Tenet.jpg",
+        Ratings: "4.6",
+        Date: "Dec 28, 2021", 
+    },
+    {
+        id: 6,
+        title: "Peaky Blinders",
+        URL: "/Cinemora/Images/Movies/Peaky Blinders.jpg",
+        Ratings: "7.6",
+        Date: "Dec 28, 2021", 
+    },
+]

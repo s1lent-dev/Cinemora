@@ -16,20 +16,20 @@
     -webkit-backdrop-filter: blur(3.5px);
   }
   &.show {
-    background-color: var(--backg-1);
+    background-color: var(--black3);
   }
   &.hide {
     transform: translateY(-60px);
   }
 
   &.dropdown {
-    background: var(--backg-1);
+    background: var(--black);
     .mobileMenuItems {
       display: flex;
       position: absolute;
       top: 60px;
       left: 0;
-      background: var(--backg-1);
+      background: var(--black);
       flex-direction: column;
       width: 100%;
       padding: 20px 0;
@@ -49,11 +49,15 @@
       .close {
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
       }
       .closeIcon {
         color: var(--Text);
-        margin-right: 10px;
+        margin-right: 25px;
+        cursor: pointer;
+        font-size: 20px;
+        opacity: 0.5;
       }
     }
   }
@@ -120,7 +124,7 @@
       }
 
       .userProfile1 {
-        background-color: var(--backg-1);
+        background-color: var(--black);
         cursor: pointer;
         position: absolute;
         top: 0px;
@@ -210,7 +214,7 @@
         }
 
         .userProfile {
-          background-color: var(--backg-1);
+          background-color: var(--black);
           cursor: pointer;
           position: absolute;
           top: 0px;
@@ -323,7 +327,7 @@
   .searchBar {
     width: 100%;
     height: 60px;
-    background-color: var(--backg-2);
+    background-color: var(--Text);
     position: absolute;
     animation: mobileMenu 0.4s ease forwards;
 
@@ -344,7 +348,7 @@
       justify-content: center;
 
       .close {
-        color: var(--backg-2);
+        color: var(--Text);
         opacity: 0.5;
       }
     }
@@ -359,8 +363,8 @@
         flex-shrink: 0;
         margin-left: 10px;
         cursor: pointer;
-        color: var(--Text);
-        opacity: 0.3;
+        color: var(--black);
+        opacity: 0.6;
       }
       input {
         width: 100%;
@@ -370,7 +374,7 @@
         border: 0;
         padding: 0 15px;
         font-size: 14px;
-        color: var(--Text);
+        color: var(--black);
         @include md {
           height: 60px;
           font-size: 20px;

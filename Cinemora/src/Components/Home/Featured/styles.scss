@@ -60,6 +60,11 @@
     left: 0;
     top: 0;
     background: linear-gradient(90deg, #04152d 0%, rgba(4, 21, 45, 0) 100%);
+
+    @include xs {
+        width: 100px;
+        height: 100%;  
+    }
   }
 
   .overlay{
@@ -88,10 +93,11 @@
         text-align: center;
         align-items: center;
         color: var(--Text);
-        h3{
+        h4{
             font-size: 3.6rem;
-            color: red;
-
+            color: var(--Text);
+            font-family: var(--font-3);
+            font-weight: 1000;
             @include xs{
                 font-size: 1.6rem;
             }
@@ -99,6 +105,7 @@
         p{
             opacity: 0.6;
             font-size: 1.4rem;
+            font-family: var(--font-2);
             @include xs{
                 font-size: 0.8rem;
             }

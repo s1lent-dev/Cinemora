@@ -62,10 +62,10 @@ const Footer = () => {
               <span>© 2024 Cinemora. All rights reserved</span>
             </div>
             <div className="social">
-              <InstagramIcon />
-              <XIcon />
-              <FacebookIcon />
-              <LinkedInIcon />
+              <InstagramIcon className="icon"/>
+              <XIcon className="icon"/>
+              <FacebookIcon className="icon"/>
+              <LinkedInIcon className="icon"/>
             </div>
           </div>
         </div>
