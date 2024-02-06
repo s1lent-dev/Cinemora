@@ -168,25 +168,25 @@ const Navbar = () => {
                   </div>
                   <ul className="profileItems">
                     <li className="Items">
-                      <AccountCircleIcon style={{ fontSize: "15px" }} />
+                      <AccountCircleIcon style={{ fontSize: "20px" }} />
                     </li>
                     <li className="Items">My Profile</li>
                   </ul>
                   <ul className="profileItems">
                     <li className="Items">
-                      <StarIcon style={{ fontSize: "15px" }} />
+                      <StarIcon style={{ fontSize: "20px" }} />
                     </li>
                     <li className="Items">Watchlist</li>
                   </ul>
                   <ul className="profileItems">
                     <li className="Items">
-                      <SettingsIcon style={{ fontSize: "15px" }} />
+                      <SettingsIcon style={{ fontSize: "20px" }} />
                     </li>
                     <li className="Items">Settings</li>
                   </ul>
                   <ul className="profileItems">
                     <li className="Items">
-                      <LogoutIcon style={{ fontSize: "15px" }} />
+                      <LogoutIcon style={{ fontSize: "20px" }} />
                     </li>
                     <li className="Items">Log Out</li>
                   </ul>
