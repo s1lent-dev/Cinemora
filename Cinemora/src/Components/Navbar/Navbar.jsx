@@ -9,8 +9,8 @@ import StarIcon from "@mui/icons-material/Star";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
-import Logo from "../../../assets/Logo/Cinmora_logo.svg";
-import pfp from "../../../assets/User/PFP 1.jpg";
+import Logo from "../../assets/Logo/Cinmora_logo.svg";
+import pfp from "../../assets/User/PFP 1.jpg";
 
 const Navbar = () => {
   const [show, setShow] = useState("top");

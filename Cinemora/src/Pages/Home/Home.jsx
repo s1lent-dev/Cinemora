@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Featured from "../Components/Home/Featured/Featured";
-import Caraousal from "../Components/Home/CaraousalSection/Caraousal";
+import Featured from "../../Components/Featured/Featured";
+import Caraousal from "../../Components/CaraousalSection/Caraousal";
 
 const Home = () => {
   const { name, email } = useSelector((state) => state.user.user);

@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
 import ContentWrapper from "../ContentWrapper/ContentWrapper";
-import logo from "../../../assets/Logo/Cinmora_logo.svg";
+import logo from "../../assets/Logo/Cinmora_logo.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
