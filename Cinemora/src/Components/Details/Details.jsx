@@ -1,21 +1,33 @@
 import React from 'react';
+import './styles.scss'
+import { useState } from 'react';
+import ContentWrapper from "../ContentWrapper/ContentWrapper"
 import { useParams } from 'react-router-dom';
-import { CaraousalData } from "../CaraousalSection/CaraousalData"
-const Details = () => {
-  // Accessing the id parameter from the route
-  let { id } = useParams();
 
+import DetailsBanner from "./DetailsBanner"
+const Details = () => {
+  const{id, type}=useParams();
+  const[loading, setLoading]=useState(false);
   return (
-    <div>
-      {CaraousalData.map((movie) => {
-        if (movie.id == id) {
-          return (
-            <div className="img" key={movie.id}>
-              <img src={movie.URL} alt="" style={{ width: "100%" , height: "100%", objectFit: "cover"}}/>
-            </div>
-          )
-        }
-      })}
+    <div className="Details">
+      {!loading ? (
+        <DetailsBanner/>
+      ):(
+        <div className="detailsBannerSkeleton">
+                    <ContentWrapper>
+                        <div className="left skeleton"></div>
+                        <div className="right">
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                        </div>
+                    </ContentWrapper>
+                </div>
+      )}
     </div>
   );
 }
